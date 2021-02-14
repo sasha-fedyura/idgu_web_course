@@ -1,0 +1,130 @@
+var scoops = 10;
+
+while (scoops > 0)
+{
+    alert("More icecream!");
+    scoops--;
+}
+
+for(scoops = 10; scoops > 0; scoops--)
+{
+    alert("There's more ice cream!");
+}
+
+alert("life without ice cream isn't the same")
+
+//Фрагмент 1
+var count = 0;
+
+for(var i = 0; i < 5; i++)
+{
+    count += i;
+}
+
+alert("count is " + count);
+
+// Ответ 10
+
+//Фрагмент 2
+var tops = 5;
+
+while (tops > 0)
+{
+    for(var spins = 0; spins < 3; spins++)
+    {
+        alert("Top is spinning!")
+    }
+    tops--;
+}
+
+// Ответ 15
+
+//Фрагмент 3
+for(var berries = 5; berries > 0; berries--)
+{
+    alert("Eating a berry");
+}
+
+// Ответ 5
+
+//Фрагмент 4
+for(scoops = 0; scoops < 10; scoops++)
+{
+    alert("There's more ice cream!")
+}
+
+alert("life without ice cream isn't the same");
+
+// Ответ 10
+
+scoops = 10;
+
+while (scoops <= 0)
+{
+    if (scoops < 3)
+    {
+        alert("Ice cream is running low!");
+    } 
+    else if (scoops > 9)
+    {
+        alert("Eat faster, the ice cream is going to melt!");
+    }
+
+    if (scoops == 3)
+    {
+        alert("Ice cream is running low!");
+    }
+    else if (scoops > 9)
+    {
+        alert("Eat faster, the ice cream is going to melt!");
+    }
+    else if (scoops == 2)
+    {
+        alert("Going once!");
+    }
+    else if (scoops == 1)
+    {
+        alert("Going twice!");
+    }
+    else if (scoops == 0)
+    {
+        alert("Gone!");
+    }
+    else
+    {
+        alert("Still lots of ice cream left, come and get it.");
+    }
+    
+    scoops--;
+}
+alert("life without ice cream isn't the same");
+
+var word1 = "a";
+var word2 = "nam";
+var word3 = "nal p";
+var word4 = "lan a c";
+var word5 = "a man a p";
+
+var phrase = "";
+
+for(var i = 0; i < 4; i++)
+{
+    if (i == 0)
+    {
+        phrase = word5;
+    }
+    else if (i == 1)
+    {
+        phrase = phrase + word4;
+    }
+    else if (i == 2)
+    {
+        phrase = phrase + word1 + word3;
+    }
+    else if (i == 3)
+    {
+        phrase = phrase + word1 + word2 + word1;
+    }
+}
+
+alert(phrase);
