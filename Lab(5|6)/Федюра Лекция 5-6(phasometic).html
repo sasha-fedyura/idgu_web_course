@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Phrase-o-matic</title>
+	<!--задаем кодировку страницы-->
+	<meta charset="utf-8">
+	<!--задаем шрифт для всего тела страницы-->
+	<style>
+		body {
+			font-family: Verdana, Helvetica, sans-serif;
+		}
+	</style>
+	<script>
+		//функция, которая создает фразу из случайного набора слов
+		function makePhrases() {
+			//задаем массивы с грппами слов для выбора
+			var words1 = ["24/7", "multi-Tier", "30,000 foot", "B-to-B", "win-win"];
+			var words2 = ["empowered", "value-added", "oriented", "focused", "aligned"];
+			var words3 = ["process", "solution", "tipping-point", "strategy", "vision"];
+			
+			//определяем случайные индексы, для выбора слова из массива
+			var rand1 = Math.floor(Math.random() * words1.length);
+			var rand2 = Math.floor(Math.random() * words2.length);
+			var rand3 = Math.floor(Math.random() * words3.length);
+			
+			//собираем фразу из случайных элементов
+			var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
+			//получаем елемент html документа и задаем фразу в качестве содержимого
+			var phraseElement = document.getElementById("phrase");
+			phraseElement.innerHTML = phrase;
+		}
+		
+		//запускаем функцию, только после загрузки страницы
+		window.onload = makePhrases;
+	</script>
+</head>
+<body>
+	<h1>Phrase-o-Matic says:</h1>
+
+	<p id="phrase"></p>
+
+</body>
+</html>
