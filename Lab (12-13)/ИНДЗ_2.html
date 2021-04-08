@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+	<body>
+		<button onclick="myFunction()">Try it</button>
+		<h1 id="demo">Текст, помеченный меткой demo</h1>
+		
+		<script>
+			alert("Нажмите кнопку для замены текста страницы");
+			function myFunction(){
+				var subText = "Произошла замена";
+				document.getElementById("demo").innerHTML = subText;
+			} 
+		</script>
+	</body>
+</html>

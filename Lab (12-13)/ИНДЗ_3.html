@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<body>
+		<script>
+			class Car {
+				constructor (brand, model, color) {
+					this.brand = brand;
+					this.model = model;
+					this.color = color;
+				}
+				showInfo () {
+					alert("Brnad - " + this.brand + "\n" +
+						  "Model - " + this.model + "\n" +
+						  "Color - " + this.color);
+				}
+			}
+			var car = new Car("Silvelfufy", "noob", "pink");
+			car.showInfo();
+		</script>
+	</body>
+</html>
