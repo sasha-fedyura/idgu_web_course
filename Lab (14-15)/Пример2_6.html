@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Пример 2_6</title>
+	</head>
+	<body>
+		<script>
+			var color = prompt("Введите цвет: зеленый, красный или зеленый", "");
+			var shape = prompt("Введите форму: круглый или квадратный", "");
+			var size = prompt("Введите размер: большой или маленький", "");
+			
+			if(color == "сининй" && shape == "круглая" && size == "большой"){
+				alert("Что-то синее и большое");
+			}
+			else if(color != "сининй" && shape == "квадратная"){
+				alert("Наверное вы подумали про яблоко, но почему квадратное?");
+			}
+			else{
+				alert(color + " " + shape + " " + size);
+			}
+		</script>
+	</body>
+</html>

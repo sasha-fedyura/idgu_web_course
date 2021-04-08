@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Пример 2_3</title>
+	</head>
+	<body>
+		<script>
+			var month_names = new Array("January", "Fabruary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+			var d = new Date();
+			var current_date = d.getDate();
+			var current_month = d.getMonth() + 1;
+			var current_year = d.getFullYear();
+			alert("day - " + current_date + " ; month - " + current_month + " ; year - " + current_year);
+			if(current_month == 0){
+				alert("На дворе январь" + ";" + month_names[current_month]);
+			}
+			else if(current_month == 1){
+				alert("На дворе февраль" + ";" + month_names[current_month]);
+			}
+			else{
+				alert("Месяц науке не известен!");
+			}
+			
+			var inputDate = new Date(prompt("Введите дату формата yyyy-mm-dd: ", ""));
+			var decadeNumb = Math.round(inputDate.getDate() / 10) + 1;
+			alert("Декада месяца: " + decadeNumb);
+			
+			var inputYear = inputDate.getFullYear();
+			var century = Math.round(inputYear/100) + 1;
+			if(century > 21 || century < 17){
+				alert("Век науке не известен");
+			}
+			else{
+				alert(century + " век");
+			}
+		</script>
+	</body>
+</html>

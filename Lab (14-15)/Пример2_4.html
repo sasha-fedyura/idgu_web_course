@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Пример 2_4</title>
+	</head>
+	<body>
+		<script>
+			var access;
+			var access2;
+			var age = prompt("Сколько вам лет?", "");
+			if(age > 14){
+				access = true;
+			}
+			else{
+				access = false;
+			}
+			access2 = (age > 14) ? true : false;
+			alert("access = " + access + ";access2 = " + access2);
+			
+			var a = prompt("Введите а: ", "");
+			var b = prompt("Введите b: ", "");
+			
+			var result = sqrt(a*b) < 4 ? "Мало" : "Много";
+			result = a==b ? "значения равны" : "значения не равны";
+		</script>
+	</body>
+</html>
