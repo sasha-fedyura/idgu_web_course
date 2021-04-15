@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+	<head> </head>
+	<body>
+		<script>
+			var gender;
+			do{
+				gender = prompt("Введите свой пол(мужской/женский)?");
+				if(gender == 'мужской'){
+					alert("ок");
+				}
+				if(!(gender != 'мужской' || gender != 'женский')){
+					alert('Попробуйте еще раз)');
+				}
+			}while(!(gender != 'мужской' || gender != 'женский'));
+		</script>
+	</body>
+</html> 

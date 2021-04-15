@@ -1,0 +1,31 @@
+<!DOCTYPE htm1l>
+<html>
+	<body>
+		<script>
+			function rand(max){
+				return Math.floor(Math.random() * max);
+			}
+			
+			function swapFirstLastWord(text){
+				var tempArray = text.split(" ");
+			
+				var temp = tempArray[0];
+				tempArray[0] = tempArray[tempArray.length - 1];
+				tempArray[tempArray.length - 1] = temp;
+				
+				return tempArray.join(" ");
+			}
+			
+			var rndSymbNumb = rand(50);
+			var inputText;
+			do{
+				inputText = prompt("Введите текст длинной " + rndSymbNumb, "");
+			}
+			while(inputText.length > rndSymbNumb || inputText.length <=0);
+			
+			var swapedText = swapFirstLastWord(inputText);
+			
+			alert(swapedText);
+		</script>
+	</body>
+</html> 

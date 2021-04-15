@@ -1,0 +1,33 @@
+<!DOCTYPE htm1l>
+<html>
+	<body>
+		<p id="demo">Нажмите на кнопку, чтобы определить, что больше: 5 или 10.</p>
+		<button onclick="myFunction()">Попробуй это</button>
+		<script>
+			function myFunction(){
+				document.getElementById("demo").innerHTML = Math.max(5, 10);
+			}
+			
+			function rand(max){
+				return Math.floor(Math.random() * max);
+			}
+			
+			var rndSymbNumb = rand(50);
+			var text;
+			do{
+				text = prompt("Введите текст длинной " + rndSymbNumb, "");
+			}
+			while(text.length > rndSymbNumb || text.length <=0);
+			
+			var tempArray = text.split(" ");
+			
+			var temp = tempArray[0];
+			tempArray[0] = tempArray[tempArray.length - 1];
+			tempArray[tempArray.length - 1] = temp;
+			
+			text = tempArray.join(" ");
+			
+			alert(text);
+		</script>
+	</body>
+</html> 

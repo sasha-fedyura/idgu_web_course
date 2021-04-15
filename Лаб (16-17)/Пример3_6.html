@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+	<head> </head>
+	<body>
+		<script>
+			var i = 1;
+			var phone_numbers = {
+				firstNumber: "1",
+				twoNumber: "2",
+				threeNumber: "3"
+			};
+			while (i < 10){
+				phone_numbers.firstNumber = phone_numbers.firstNumber + "-" + i.toString();
+				phone_numbers.twoNumber = phone_numbers.twoNumber + "-" + i;
+				i++;
+			}
+			alert(phone_numbers.firstNumber) ;
+			alert(phone_numbers.twoNumber) ;
+			alert(i);
+		</script>
+	</body>
+</html> 

@@ -1,0 +1,15 @@
+<!DOCTYPE htm1>
+<html>
+	<body>
+		<p id="p1">Нажмите на кнопку, чтобы определить, когда слово "определить" встретиться первый раз</p>
+		<p id="p2">0</p>
+		<button onclick="myFunction()">Попробуй это</button>
+		<script>
+			function myFunction(){
+				var str = document.getElementById("p1").innerHTML;
+				var n = str.indexOf("определить");
+				document.getElementById("p2").innerHTML = n + 1;
+			}
+		</script>
+	</body>
+</html> 
