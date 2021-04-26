@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<ul>
+			<li>
+				<a href="http://jquery.com">jQuery</a>
+				<ul>
+					<li><a href="http://blog.jquery.com">jQuery Blog</a></li>
+				</ul>
+			</li>
+			<li><a href="http://sizzlejs.com">Sizzle</a></li>
+		</ul>
+		<script>
+			var links = $('a', 'li');
+			for (var i = 0; i < links.length; i++) {
+				alert(i + ": " + links[i].href);
+			}
+		</script>
+	</body>
+</html>

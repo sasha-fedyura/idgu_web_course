@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function (){
+				$("#but1").click(function (){
+					$(".block").each(function (i){
+						if(i%2!=0){
+							$(this).slideToggle("slow");
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id="but1" style="margin-bottom:20px">Slide-show</button><br>
+		<div class="block" style="width:80px; height:80px; background-color:red;"></div><br>
+		<div class="block" style="width:80px; height:80px; background-color:green;"></div><br>
+		<div class="block" style="width:80px; height:80px; background-color:blue;"></div><br>
+		<div class="block" style="width:80px; height:80px; background-color:black;"></div><br>
+		<div class="block" style="width:80px; height:80px; background-color:yellow;"></div><br>
+		<div class="block" style="width:80px; height:80px; background-color:brown;"></div><br>
+	</body>
+</html>

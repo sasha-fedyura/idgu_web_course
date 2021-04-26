@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			function getRandomArbitrary(min, max) {
+				return Math.floor(Math.random() * (max - min) + min);
+			}
+			
+			var divIndexes = [1,2,3,4,5];
+			var divArray = divIndexes.slice();
+			$(document).ready(function (){
+				$("#but1").click(function (){
+					var rnd = getRandomArbitrary(0, divArray.length-1);
+					$("#div" + divArray[rnd]).fadeIn();
+					divArray.splice(rnd, 1);
+				});
+				
+				$("#but2").click(function (){
+					divArray = divIndexes.slice();
+					for(var i = 0; i < divArray.length; i++){
+						$("#div" + divArray[i] + "").fadeOut();
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>Demonstrate fadeOut() with different parameters.</p>
+		<button id="but1">Click to fade in boxes</button>
+		<button id="but2">Click to fade out boxes</button>
+		<div id="div1" style="width:80px; height:80px; display:none; background-color:red;"></div><br>
+		<div id="div2" style="width:80px; height:80px; display:none; background-color:green;"></div><br>
+		<div id="div3" style="width:80px; height:80px; display:none; background-color:blue;"></div><br>
+		<div id="div4" style="width:80px; height:80px; display:none; background-color:black;"></div><br>
+		<div id="div5" style="width:80px; height:80px; display:none; background-color:yellow;"></div><br>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function (){
+				$("#but1").click(function (){
+					$("[href]").hide();
+				});
+				$("#but2").click(function (){
+					$("[href]").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h2 class="test">This is a heading</h2>
+		<p class="test">This is a paragraph</p>
+		<p id="test">This is another paragraph</p>
+		<button id="but1">Click me to hide</button>
+		<button id="but2">Click me to show</button>
+		<a href="http://google.com">Гугол</a>
+		<a href="http://wikipedia.org">Википудия</a>
+		<a href="http://idgu.edu.ua/">Ай Ди Джи Ю</a>
+	</body>
+</html>
